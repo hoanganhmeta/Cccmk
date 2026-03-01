@@ -1,0 +1,23 @@
+url = "https://fast-dev-apis.vercel.app/ytmp3"
+params = {
+    "url": "https://youtu.be/l-JY3lGg_Ik"
+}
+
+response = requests.get(url, params=params)
+data = response.json()
+
+if data.get("status"):
+    print("🖼 Thumbnail :", data["image"])
+    print("⬇️ Download Link :", data["download_url"])
+else:
+    print("❌ Failed to download audio")
+
+📷 𝖱𝖾𝗌𝗎𝗅𝗍:
+
+{
+  "status": true,
+  "image": "https://i.ytimg.com/vi/l-JY3lGg_Ik/hqdefault.jpg",
+  "download_url": "https://pamela88.savenow.to/pacific/?pxFxsp4RaLjQFwTGvOm3ZJu",
+  "developer": "Shantanu Patel",
+  "telegram": "@FAST_DevelopersOfficial"
+}
