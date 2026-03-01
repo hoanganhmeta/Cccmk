@@ -2,6 +2,6 @@
 ░▄▄▄▄░
 ▀▀▄██►
 ▀▀███►
-    ░▀███►░█►
+     ░▀███►░█►
 ▒▄████
  </div> <div class="divider"></div> <div class="meta-list"> <strong>BACK:</strong> KHÔNG THÍCH TỐN THỜI GIAN VÀO NHỮNG THỨ KHÔNG MANG LẠI GIÁ TRỊ. <strong>CEO:</strong> Hoang Anh <br> <strong>Contact:</strong> <a href="https://files.catbox.moe/eceijl.jpeg" target="_blank">t.me/hoanganhmeta</a> </div> <div class="music-player" id="player"> <button id="playBtn"><i data-lucide="play-circle"></i></button> <span id="songTitle">hoanganhxautrai</span> <div class="pulse" id="pulse"></div> </div> <audio id="music" loop> <source src="https://pomf2.lain.la/f/l5nv41b6.mp3" type="audio/mpeg"> </audio> </div> <script> lucide.createIcons(); const music = document.getElementById('music'); const btn = document.getElementById('playBtn'); const pulse = document.getElementById('pulse'); let playing = false; btn.addEventListener('click', () => { if(!playing){ music.play(); btn.innerHTML = '<i data-lucide="pause-circle"></i>'; pulse.style.animationPlayState = 'running'; playing = true; } else { music.pause(); btn.innerHTML = '<i data-lucide="play-circle"></i>'; pulse.style.animationPlayState = 'paused'; playing = false; } lucide.createIcons(); }); </script> </body> </html>
